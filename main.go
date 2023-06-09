@@ -1,32 +1,19 @@
 package main
 
 import (
-	"log"
+	// go stdlib
 	"os"
-	"github.com/gotk3/gotk3/glib"
-	"github.com/gotk3/gotk3/gtk"
+	"log"
+
+	"hyperboreal.zone/juke/model/config"
 )
 
 func main() {
-	// create Gtk app
-	const gtkID = "xyz.pinegrove.juke"
-	gtkJuke, err :=
-			gtk.ApplicationNew(gtkID, glib.APPLICATION_FLAGS_NONE)
-	if err != nil {
-		log.Fatal("Could not create application.", err)
+	// startup routine
+	// check if juke.toml exists
+	if _, err := os.Stat("juke.toml"); os.IsNotExist(err) {
+		log.Fatal("Can't access config:", err)
 	}
+	// load config from juke.toml
 
-	// activate
-	gtkJuke.Connect("activate", func() {
-		// create winMain
-		winMain, err := gtk.ApplicationWindowNew(gtkJuke)
-		if err != nil {
-			log.Fatal("Could not spawn `winMain`.", err)
-		}
-
-		winMain.SetTitle("juke")
-		winMain.ShowAll()
-	})
-	// run Gtk app
-	gtkJuke.Run(os.Args)
 }

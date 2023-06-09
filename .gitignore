@@ -1,3 +1,7 @@
+## Juke-specific
+juke.toml
+testdata/
+testlibrary/
 ## Go
 # Binaries for programs and plugins
 *.exe
