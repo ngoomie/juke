@@ -1,8 +1,8 @@
-package config
+package model
 
 import (
 	//go stdlib
-	"io"
+	"fs"
 	//external deps
-	"github.com/BurntSushi/toml"
+	"github.com/pelletier/go-toml/v2"
 )

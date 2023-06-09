@@ -1,4 +1,4 @@
-## Juke-specific
+## Juke devstuff
 juke.toml
 testdata/
 testlibrary/
@@ -15,3 +15,6 @@ testlibrary/
 *.out
 # Go workspace file
 go.work
+## SQLite
+*.db
+*.db-journal
