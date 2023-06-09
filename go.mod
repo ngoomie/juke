@@ -1,4 +1,4 @@
-module hyperboreal.zone/juke
+module nu.hyperboreal.zone/juke
 
 go 1.20
 

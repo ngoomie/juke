@@ -5,7 +5,7 @@ import (
 	"os"
 	"log"
 	// juke subpackages
-	"hyperboreal.zone/juke/model/config"
+	"nu.hyperboreal.zone/juke/model/config"
 )
 
 func main() {
