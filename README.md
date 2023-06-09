@@ -4,7 +4,11 @@ A music manager and player written in Go
 
 ## Dependencies
 
-- gotk3
+- github.com/gotk3/gotk3
+- github.com/BurntSushi/toml
+- gorm.io/gorm
+- gorm.io/drivers/sqlite
+
 
 ## Suggested tools
 
