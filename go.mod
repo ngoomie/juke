@@ -5,16 +5,15 @@ go 1.20
 // required by juke itself
 require (
 	github.com/gotk3/gotk3 v0.6.2 // GUI
+	github.com/mattn/go-sqlite3 v1.14.17 // SQLite
 	github.com/pelletier/go-toml v1.9.5 // conf
-	gorm.io/driver/sqlite v1.5.2 // SQLite
-	gorm.io/gorm v1.25.2-0.20230530020048-26663ab9bf55 // ORM
+	gopkg.in/reform.v1 v1.5.1 // ORM
 )
 
-// indirect requirements; used by juke's deps
 require (
-	// gorm.io/gorm
-	github.com/jinzhu/inflection v1.0.0
-	github.com/jinzhu/now v1.1.5
-	// gorm.io/driver/sqlite
-	github.com/mattn/go-sqlite3 v1.14.17
+	github.com/AlekSi/pointer v1.1.0 // reform
+	github.com/golang-sql/civil v0.0.0-20190719163853-cb61b32ac6fe // reform
+	github.com/pkg/errors v0.9.1 // reform
+	golang.org/x/crypto v0.0.0-20190325154230-a5d413f7728c // reform
+	golang.org/x/text v0.3.4 // reform
 )
